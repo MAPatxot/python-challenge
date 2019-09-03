@@ -14,6 +14,7 @@
 # From what I can already see, there are 86 Months, first row is taken up 
 # by Date,Profit/Losses -- Go through notes starting from August 20th, skipping header!
 # += -- StackOverflow - add whatever is to the right of the += to the variable on the left of the +=
+# https://www.quora.com/What-does-total-+-a-in-Python-mean
 
 # 1st - Import the necessary dependencies for os.path.join() -- (August 20th Notes)
 import os
