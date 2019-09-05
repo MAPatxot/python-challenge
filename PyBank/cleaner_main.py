@@ -49,3 +49,18 @@ print(f"TOTAL: ${net_total}")
 print(f"AVERAGE CHANGE: ${average_change:.2f}")
 print(f"GREATEST INCREASE IN PROFITS: {greatest_increase_month}, (${greatest_profit_amount})")
 print(f"GREATEST DECRESE IN PROFITS: {greatest_decrease_month}, (${greatest_losses_amount})")
+
+data_output = os.path.join("..", "PyBank", "Resources", "final_budget_data.text")
+
+with open(data_output, "w", newline="") as textfile:
+    textfile.write(f"\n")
+    textfile.write(f"FINANCIAL ANALYSIS\n")
+    textfile.write(f"\n")
+    textfile.write(f"---------------------------------------------------\n")
+    textfile.write(f"\n")
+    textfile.write(f"TOTAL MONTHS: {total_months}\n")
+    textfile.write(f"TOTAL: ${net_total}\n")
+    textfile.write(f"AVERAGE CHANGE: ${average_change:.2f}\n")
+    textfile.write(f"GREATEST INCREASE IN PROFITS: {greatest_increase_month}, (${greatest_profit_amount})\n")
+    textfile.write(f"GREATEST DECRESE IN PROFITS: {greatest_decrease_month}, (${greatest_losses_amount})\n")
+    textfile.write(f"\n")
