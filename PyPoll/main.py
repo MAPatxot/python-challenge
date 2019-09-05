@@ -100,3 +100,26 @@ print(f"---------------------------------------------------")
 print(f"Winner: {winner_name}")
 print(f"---------------------------------------------------")
 print(f"")
+
+# A different way of outputting a text compared to PyPank 
+pypoll_analysis = (
+f"\n"
+f"Election Results\n"
+f"---------------------------------------------------\n"
+f"Total Votes: {total_votes}\n"
+f"---------------------------------------------------\n"
+f"Khan: {khan_percent:.3f}% ({khan_votes})\n"
+f"Correy: {correy_percent:.3f}% ({correy_votes})\n"
+f"Li: {li_percent:.3f}% ({li_votes})\n"
+f"O'Tooley: {otooley_percent:.3f}% ({otooley_votes}\n"
+f"---------------------------------------------------\n"
+f"Winner: {winner_name}\n"
+f"---------------------------------------------------\n"
+f"\n"
+)
+print(pypoll_analysis)
+data_output = os.path.join("..", "PyPoll", "Resources", "final_pypoll_analysis.txt")
+
+#export to text file
+with open(data_output, "w") as textfile:
+   textfile.write(pypoll_analysis)
